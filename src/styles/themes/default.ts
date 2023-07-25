@@ -1,15 +1,15 @@
 export const defaultTheme = {
   white: '#fff',
+  black: '#000',
 
-  'blue-400': '#096cac',
-  'blue-500': '#075d9a',
-  'blue-600': '#054d89',
-  'blue-700': '#023e77',
-  'blue-800': '#002e65',
+  'text-light': '#B0B0B0',
+  'cyan-light': '#BDEBEA',
 
-  'violet-200': '#d8e0ff',
-  'violet-300': '#bfc8ef',
-  'violet-400': '#a6b0e0',
-  'violet-500': '#8d97d0',
-  'violet-600': '#747fc0',
+  background: '#041F31',
+  'card-background': '#222525',
+
+  'linear-gradient':
+    'linear-gradient(90deg, #00f5a0 0%, #00e0e0 74.98%, #00d9f5 100%)',
+  'border-gradient':
+    'linear-gradient(to bottom, #00f5a0, rgba(0, 0, 0, 0)) 1 100%',
 } as const

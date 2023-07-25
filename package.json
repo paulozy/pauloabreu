@@ -10,12 +10,20 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@apollo/client": "^3.7.17",
+    "axios": "^1.4.0",
+    "cmdk": "^0.2.0",
+    "graphql": "^16.7.1",
+    "nanoid": "^4.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
-    "styled-components": "^6.0.2"
+    "styled-components": "^6.0.2",
+    "swiper": "^10.0.4"
   },
   "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/node": "^20.4.4",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
     "@typescript-eslint/eslint-plugin": "^5.61.0",

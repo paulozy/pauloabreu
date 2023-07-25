@@ -1,4 +1,5 @@
 import { ThemeProvider } from 'styled-components'
+import { ProjectsProvider } from './contexts/ProjectsContext'
 import { Home } from './pages/Home'
 import { GlobalStyle } from './styles/global'
 import { defaultTheme } from './styles/themes/default'
@@ -8,7 +9,9 @@ export function App() {
     <ThemeProvider theme={defaultTheme}>
       <GlobalStyle />
 
-      <Home />
+      <ProjectsProvider>
+        <Home />
+      </ProjectsProvider>
     </ThemeProvider>
   )
 }
