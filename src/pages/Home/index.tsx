@@ -1,7 +1,6 @@
 import {
   BiLogoAws,
   BiLogoDocker,
-  BiLogoGmail,
   BiLogoGoLang,
   BiLogoJava,
   BiLogoLinkedin,
@@ -10,7 +9,7 @@ import {
   BiLogoPostgresql,
   BiLogoReact,
   BiLogoSpringBoot,
-  BiLogoTypescript,
+  BiLogoTypescript
 } from 'react-icons/bi'
 import { FiGithub } from 'react-icons/fi'
 import { SiNestjs, SiRedis } from 'react-icons/si'
@@ -27,21 +26,9 @@ import {
   SocialContainer,
 } from './styles'
 import DeveloperImage from '/developer.svg'
-import ResumeFileEnUs from '/paulo-ricardo-english.pdf'
-import ResumeFilePtBr from '/paulo-ricardo-ptbr.pdf'
+import ResumeFilePtBr from '/paulo-abreu.pdf'
 
 export function Home() {
-  const getResumeFileByBrowserLang = () => {
-    const language = navigator.language
-    const languagePrefix = language.split('-')[0]
-
-    if (languagePrefix === 'pt') {
-      return ResumeFilePtBr
-    }
-
-    return ResumeFileEnUs
-  }
-
   return (
     <HomeContainer>
       <Header />
@@ -55,29 +42,25 @@ export function Home() {
             and always in search of new knowledge
           </p>
 
-          <a href={getResumeFileByBrowserLang()} download>
+          <a href={ResumeFilePtBr} download>
             Resume
           </a>
         </MeetContainer>
 
-        <img src={DeveloperImage} alt="Developer" />
+        <img src={DeveloperImage} alt="Developer" className="hero-image" />
       </HeroContainer>
 
       <AboutContainer>
         <h2>About me</h2>
-
         <p>
-          I am a highly skilled professional in the backend development area,
-          with a robust and diverse experience in technologies such as Node.js,
-          TypeScript, AWS, Microservices and Docker. My professional journey has
-          been marked by the constant acquisition and improvement of skills in
-          software development. Through active participation in a variety of
-          projects, I was able to accumulate a rich experience in designing and
-          implementing scalable and efficient solutions.
+          Specialist in Backend Development with Node.js and Golang <br />
+          Backend developer for +3 years, mainly focused on developing software and solutions with Node.js (Javascript/Typescript). I have a degree in Computer Networks. <br />
+
+          My main specialty is Node.js, using some of the market's leading frameworks, such as Nest.js, Express.js and Fastify.js. I use these tools to develop API's, serverless functions (AWS Lambdas), background services such as queues, some of the technologies used being: Amazon SQS and RabbitMQ.
         </p>
       </AboutContainer>
 
-      <ProjectsContainer>
+      <ProjectsContainer id="projects">
         <h2>Projects</h2>
         <Carousel />
       </ProjectsContainer>
@@ -85,7 +68,7 @@ export function Home() {
       <SkillsContainer>
         <h2>Skills</h2>
 
-        <div>
+        <div className="skills-icons">
           <BiLogoNodejs size={90} />
           <BiLogoGoLang size={90} />
           <BiLogoJava size={90} />
@@ -102,15 +85,11 @@ export function Home() {
       </SkillsContainer>
 
       <SocialContainer>
-        <a href="">
-          <BiLogoGmail size={50} />
-        </a>
-
-        <a href="">
+        <a href="https://www.linkedin.com/in/paulo-abreu-santana/">
           <BiLogoLinkedin size={50} />
         </a>
 
-        <a href="">
+        <a href="https://www.github.com/paulozy">
           <FiGithub size={50} />
         </a>
       </SocialContainer>

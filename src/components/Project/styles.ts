@@ -68,7 +68,62 @@ export const ProjectCard = styled.div`
     transform: scale(1.1);
   }
 
-  /* @media (max-width: 768px) {
+  @media (max-width: 768px) {
     max-width: 300px;
-  } */
+
+    & img {
+      height: 150px;
+    }
+
+    & div {
+      padding: 0.7rem;
+
+      & h3 {
+        font-size: 1rem;
+      }
+
+      & p {
+        font-size: 0.95rem;
+      }
+
+      & ul {
+        gap: 0.7rem;
+
+        & li {
+          font-size: 0.95rem;
+          padding: 0.4rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 425px) {
+    max-width: 100%;
+    min-width: 0;
+
+    & img {
+      height: 120px;
+    }
+
+    & div {
+      padding: 0.5rem;
+
+      & h3 {
+        font-size: 0.95rem;
+      }
+
+      & p {
+        font-size: 0.9rem;
+      }
+
+      & ul {
+        gap: 0.4rem;
+
+        & li {
+          font-size: 0.85rem;
+          padding: 0.3rem;
+        }
+      }
+    }
+  }
 `

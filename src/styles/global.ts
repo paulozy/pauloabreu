@@ -21,4 +21,16 @@ export const GlobalStyle = createGlobalStyle`
   body, input, textarea, button {
     font: 400 1rem Montserrat, sans-serif;
   }
+
+  @media (max-width: 768px) {
+    html {
+      font-size: 93.75%; /* 15px */
+    }
+  }
+
+  @media (max-width: 425px) {
+    html {
+      font-size: 87.5%; /* 14px */
+    }
+  }
 `

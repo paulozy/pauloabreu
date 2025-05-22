@@ -46,17 +46,30 @@ export const HeaderContainer = styled.header`
     gap: 2rem;
   }
 
+  @media (max-width: 768px) {
+    height: 60px;
+    padding: 0 1rem;
+
+    & div {
+      gap: 1rem;
+    }
+  }
+
   @media (max-width: 425px) {
+    height: 50px;
+    padding: 0 0.5rem;
+
     & a {
       font-size: 0.8rem;
     }
 
     & button {
       font-size: 0.8rem;
+      padding: 0.4rem 0.7rem;
     }
 
     & div {
-      gap: 1rem;
+      gap: 0.5rem;
     }
   }
 `

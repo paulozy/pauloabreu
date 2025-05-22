@@ -8,8 +8,12 @@ export const SwiperContainer = styled(Swiper)`
 
   padding-left: 20px;
 
-  @media (max-width: 425px) {
+  @media (max-width: 768px) {
     padding-left: 10px;
+  }
+
+  @media (max-width: 425px) {
+    padding-left: 5px;
 
     & .swiper-button-prev,
     & .swiper-button-next {
